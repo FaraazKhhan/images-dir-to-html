@@ -1,0 +1,21 @@
+{
+  "name": "images-dir-to-html",
+  "version": "1.0.0",
+  "description": "displaying images from directory to html elements",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/read-directory"
+  },
+  "author": "Faraaz Khhan",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
