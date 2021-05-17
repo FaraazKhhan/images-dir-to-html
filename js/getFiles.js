@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const fullPath = path.join(__dirname, '../assets/images');
+const fullPath = path.join(__dirname, '../public/images');
 
 exports.filesArray = [];
 

@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #101229;
+    color: #f2f2f2;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container {
+    height: 7vh;
+    
+    padding: 0 4em;
+
+    background-color: #0a0b1b;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 1.5em;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'century', serif;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 2em;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+}

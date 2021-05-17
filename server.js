@@ -1,7 +1,8 @@
-const app = require('express')();
+const express = require('express');
+const app = new express();
 const bodyParser = require('body-parser');
 
-const files = require('./js/app');
+const folderFiles = require('./js/getFiles');
 
 // set view engine to ejs
 app.set('view engine', 'ejs');
@@ -12,9 +13,12 @@ app.set('views', __dirname + '/views');
 // use body-parser
 app.use(bodyParser.urlencoded({ extended: false }));
 
+// use static files stored inside public folder
+app.use(express.static('public'));
+
 // instead of sending hello world, we render index.ejs
 app.get('/', (request, response) => {
-    response.render('index', { filesArray: files.filesArray });
+    response.render('index', { files: folderFiles.filesArray });
 });
 
 app.listen(8080, () => {
