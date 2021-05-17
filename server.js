@@ -2,6 +2,8 @@ const express = require('express');
 const app = new express();
 const bodyParser = require('body-parser');
 
+const PORT = 3000;
+
 const folderFiles = require('./js/getFiles');
 
 // set view engine to ejs
@@ -21,6 +23,6 @@ app.get('/', (request, response) => {
     response.render('index', { files: folderFiles.filesArray });
 });
 
-app.listen(8080, () => {
-    console.log("Server is online on http://localhost:8080");
+app.listen(PORT, () => {
+    console.log(`Server is online on http://localhost:${PORT}`);
 });
